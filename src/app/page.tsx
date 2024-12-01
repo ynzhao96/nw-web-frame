@@ -27,7 +27,8 @@ export default function Home() {
     <>
       <div>Full Stack Next.js</div>
       <div>App API Response: {message}</div>
-      Test POST Request
+      <button onClick={handleSubmit}>submit</button>
+      <div>Test POST Request</div>
     </>
   );
 }
