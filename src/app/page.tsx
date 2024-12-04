@@ -27,7 +27,20 @@ export default function Home() {
     <>
       <div>Full Stack Next.js</div>
       <div>App API Response: {message}</div>
-      <button onClick={handleSubmit}>submit</button>
+      <div>
+        <button
+          onClick={handleSubmit}
+          className="bg-red"
+          style={{ backgroundColor: "red" }}
+        >
+          submit
+        </button>
+      </div>
+      <div>
+        <button onClick={() => (location.href = "/about")}>
+          jump to about page
+        </button>
+      </div>
       <div>Test POST Request</div>
     </>
   );
